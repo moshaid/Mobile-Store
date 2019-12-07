@@ -1,0 +1,250 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 10px;
+    border-bottom: 1px solid silver;
+}
+
+h1 {
+    font-size:  60px;
+}
+
+.sector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listy {
+    padding-left: 40px;
+    font-size: larger;
+}
+
+.listy li {
+    display: inline-block;
+    padding: 0px 10px;    
+}
+
+.engine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eng {
+    margin-right: 60px;
+}
+
+.enginer li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.enginer a {
+    text-decoration: none;
+    color: black;
+}
+
+.sun {
+    color: red;
+}
+
+.mag {
+   font-style: italic;
+   font-size: smaller;
+}
+
+.middle {
+    display: grid;
+    width: 100%;
+    grid-template: repeat(1, 655px) / repeat(3, 1fr);
+    background-color: black;
+    margin-top: 20px;
+}
+
+.first {
+    background-image: url("./images/crop.jpeg");
+}
+
+.first, .second, .third{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gent {
+    border: 2px solid white;
+    border-radius: 1px;
+    width: 150px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.gq {
+    font-size: larger;
+}
+
+.da {
+    font-size: 3em;
+}
+
+.dress {
+    text-align: center;
+    margin-top: 3em;
+    color: white;
+    font-size: 20px;
+}
+
+.second {
+    background-image: url("./images/outifit.jpg");
+}
+
+.spring {
+    border: 2px solid white;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 35px;
+    padding: 15px 20px;
+    color: white;
+}
+
+.third {
+    background-image: url("./images/complete.jpg");
+}
+
+.reco {
+    border: 2px solid white;
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid black;
+}
+
+.shop {
+    text-align: center;
+    margin-top: 3em;
+    font-size: 25px;
+}
+
+.end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 80px;
+}
+
+.segment {
+    margin-left: 50px;
+}
+
+.segment li {
+    display: inline-block;
+    color: white;
+    margin-left: 15px;
+}
+
+.social {
+    margin-right: 50px;
+}
+
+.social li {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px;
+    width: 30px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    color: black;
+    padding: 6px;   
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1082px){
+    .listy li {
+        padding: 0px 8px;    
+    }
+}
+
+@media screen and (max-width: 830px){
+   .spring {
+    width: 150px;
+    }
+}
+
+@media screen and (max-width: 738px){
+   .middle {
+    grid-template: repeat(3, 655px) / repeat(1, 1fr);
+    }
+
+    .first, .second, .third{
+    background-position: initial;
+    }
+}
+
+@media screen and (max-width: 489px){
+    .sector {
+        width: 100%;
+    }
+
+    .engine {
+        display: none;
+    }
+ 
+    .dropdown {
+         display: block;
+         height: 40px;
+         width: 100%;
+         background: url("./images/dropBlack.png") no-repeat right center;
+         cursor: pointer;
+     }
+
+    .listy ul {
+         overflow: hidden;
+         height: 0;
+    }
+
+    .listy ul.open {
+        height: auto;
+    }
+
+    .listy li {
+        display: block;
+    }
+ }
+
+
+
+
+
+
